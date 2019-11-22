@@ -9,13 +9,7 @@ Thanks to [Daniele Campogiani](https://github.com/dcampogiani) for the support a
 
 # Installation
 
-In order to run the sample project, run the following commands in the root directory:
-
-```
-$ swift build
-$ swift package generate-xcodeproj
-```
-Then open in XCode the **Validation workspace** and run the project.
+Open the project with XCode 11 and run it.
 
 # Functional Data Types
 
@@ -27,7 +21,7 @@ The examples in code show how to perform validation with **Option**, **Either** 
 
 Option Data Type provides two possible values:
 
-* **none**: the case in which our field is not valid
+* **none( )**: the case in which our field is not valid
 * **some(_:)**: the case in which out field is valid, encapsulating the valid value.
 
 ## Validation with Either
@@ -49,4 +43,4 @@ Validated Data Type provides two possible values:
 * **invalid(_:)**: the case in which our field is not valid, encapsulating the information relative to the error that occurred. 
 * **valid(_:)**: the case in which out field is valid, encapsulating the valid value.
 
-The main difference between **Validated** and **Either** is that **Validated** gives me the possibility to aggregate multiple errors in a **NonEmptyList** of errors, so that I can use them to present multiple errors in once.
+The main difference between **Validated** and **Either** is that **Validated** gives me the possibility to aggregate multiple errors in an Array of errors, so that I can use them to present multiple errors in once.
