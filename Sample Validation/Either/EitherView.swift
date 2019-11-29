@@ -5,9 +5,9 @@ struct EitherView: View {
 
     var body: some View {
         VStack {
-            TextField("Enter the email", text: $viewModel.email)
-            TextField.init("Enter the phone number", text: $viewModel.phone)
-            Button("Validate", action: {
+            Field("Enter the email", text: $viewModel.email)
+            Field("Enter the phone number", text: $viewModel.phone)
+            ValidateButton("Validate", action: {
                 self.viewModel.didTapValidate()
             })
             Spacer()

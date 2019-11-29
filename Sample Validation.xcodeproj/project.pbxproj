@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B632D69C2391BBD200E08EC7 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632D69B2391BBD200E08EC7 /* Field.swift */; };
+		B632D69E2391BCEB00E08EC7 /* ValidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632D69D2391BCEB00E08EC7 /* ValidateButton.swift */; };
+		B632D6A02391BE8600E08EC7 /* ErrorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B632D69F2391BE8600E08EC7 /* ErrorText.swift */; };
 		B65A8684238563F30045E09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A8683238563F30045E09B /* AppDelegate.swift */; };
 		B65A8686238563F30045E09B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A8685238563F30045E09B /* SceneDelegate.swift */; };
 		B65A8688238563F30045E09B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A8687238563F30045E09B /* MainView.swift */; };
@@ -51,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B632D69B2391BBD200E08EC7 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		B632D69D2391BCEB00E08EC7 /* ValidateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateButton.swift; sourceTree = "<group>"; };
+		B632D69F2391BE8600E08EC7 /* ErrorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorText.swift; sourceTree = "<group>"; };
 		B65A8680238563F30045E09B /* Sample Validation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Validation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65A8683238563F30045E09B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B65A8685238563F30045E09B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +114,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B632D6A12391BFE900E08EC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B632D69B2391BBD200E08EC7 /* Field.swift */,
+				B632D69D2391BCEB00E08EC7 /* ValidateButton.swift */,
+				B632D69F2391BE8600E08EC7 /* ErrorText.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B65A8677238563F30045E09B = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +232,7 @@
 		B65A88DA2385D60C0045E09B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B632D6A12391BFE900E08EC7 /* Views */,
 				B65A88DB2385D6160045E09B /* Form.swift */,
 				B65A88DD2385D6330045E09B /* String+Validation.swift */,
 				B65A88E52385EC4B0045E09B /* ValidationError.swift */,
@@ -386,8 +403,10 @@
 			files = (
 				B65A8684238563F30045E09B /* AppDelegate.swift in Sources */,
 				B65A88E22385EC0A0045E09B /* EitherViewModel.swift in Sources */,
+				B632D69E2391BCEB00E08EC7 /* ValidateButton.swift in Sources */,
 				B65A88D62385B84B0045E09B /* OptionValidator.swift in Sources */,
 				B65A86BE23856B730045E09B /* EitherView.swift in Sources */,
+				B632D6A02391BE8600E08EC7 /* ErrorText.swift in Sources */,
 				B65A88DE2385D6330045E09B /* String+Validation.swift in Sources */,
 				B6613C71238741FC00C16208 /* ValidatedViewModel.swift in Sources */,
 				B65A88E42385EC1F0045E09B /* EitherValidator.swift in Sources */,
@@ -398,6 +417,7 @@
 				B65A88D42385B73E0045E09B /* OptionViewModel.swift in Sources */,
 				B65A86C023856B950045E09B /* ValidatedView.swift in Sources */,
 				B65A88E62385EC4B0045E09B /* ValidationError.swift in Sources */,
+				B632D69C2391BBD200E08EC7 /* Field.swift in Sources */,
 				B65A8688238563F30045E09B /* MainView.swift in Sources */,
 				B65A86BC23856A8A0045E09B /* MainViewModel.swift in Sources */,
 				B65A88DC2385D6160045E09B /* Form.swift in Sources */,

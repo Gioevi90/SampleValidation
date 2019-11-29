@@ -5,11 +5,11 @@ struct ValidatedView: View {
 
     var body: some View {
         VStack {
-            TextField("Enter the email", text: $viewModel.email)
-            Text(viewModel.emailError)
-            TextField.init("Enter the phone number", text: $viewModel.phone)
-            Text(viewModel.phoneError)
-            Button("Validate", action: {
+            Field("Enter the email", text: $viewModel.email)
+            ErrorText(viewModel.emailError)
+            Field("Enter the phone number", text: $viewModel.phone)
+            ErrorText(viewModel.phoneError)
+            ValidateButton("Validate", action: {
                 self.viewModel.didTapValidate()
             })
             Spacer()
